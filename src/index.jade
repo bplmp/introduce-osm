@@ -19,12 +19,9 @@ html
         h3 Openstreetmap como solução de mapas abertos
         h1 Lições aprendidas
       +slide('blue')
-        h2 Sobre mim
-        ul
-          li Desenvolvedor web há 6 anos
-          li Brincando com Linux e o mundo Open Source desde 2011
-          li e-commerces (Trocafone, Dafiti)
-          li Fundador e Desenvolvedor Beeline-App
+        h2 Sobre o Beeline
+      +slide('blue')
+        h2 Sobre o MedidaSP
       +slide('blue')
         h1 Mapas Open Source
         h3 Porque utilizar?
@@ -48,7 +45,6 @@ html
         h2 Vídeo de 10 anos de Openstreetmap
         iframe(width="560", height="315", src="https://www.youtube.com/embed/7sC83j6vzjo", frameborder="0", allowfullscreen)
       +slide('blue')
-        h3 Lição 1
         h1 Dados
       +slide('blue')
         h2 Informações geoespaciais
@@ -57,39 +53,7 @@ html
           li Linha (Ways)
           li Polígonos (Polygon)
       +slide('blue')
-        h2 Arquivo .OSM
-        pre.language-xml.small= '<node id="181854294" lat="-23.5454466" lon="-46.56614" version="3" timestamp="2010-03-11T22:52:43Z" changeset="4102354" uid="19917" user="diogow">' + "\n" + '    <tag k="name" v="Artesanal"/>' + "\n" + '    <tag k="amenity" v="restaurant"/>' + "\n" + '</node>'
-      +slide('blue')
-        h2 Outros Formatos
-        ul
-          li: a(href="https://github.com/mapbox/pbf") PBF - Protocol buffer (.pbf)
-          li: a(href="https://github.com/mapbox/vector-tile-spec") MbTiles - Tiles vetorizados (.mbtiles)
-          li: a(href="http://geojson.org") GeoJson - Informações geoespaciais em formato JSON (.geojson)
-      +slide('blue')
-        h2 Aonde Adquirir dados
-        ul
-          li: a(href="https://mapzen.com/data/metro-extracts/") Mapzen
-          li: a(href="http://download.geofabrik.de") Geofabrik
-      +slide('blue')
-        h2 Licença
-        p: a(href="http://opendatacommons.org/licenses/odbl/summary/") Open Database License (ODbL)
-        img(src="images/licenca.png", width="450px")
-      +slide('blue')
-        h3 Lição 3
         h1 Visualização <br>& Edição
-      +slide('blue')
-        h3 O que são Tiles?
-        img(src="images/pyramid.jpeg", width='650px')
-      +slide('blue')
-        h3 Qual o custo de um servidor Tiles?
-        iframe(width="720", height="480", src="http://tools.geofabrik.de/calc/#type=geofabrik_standard&bbox=-53.109,-25.483268,-44.161,-19.782327", frameborder="0", allowfullscreen)
-      +slide('blue')
-        h2 Solução => Vector Tiles
-        p Tamanho total do arquivo do estado de São Paulo 54 Mb compactado!
-        p Saiba mais e baixa mapas diretamente vetorizados em <a href="http://osm2vectortiles.org/downloads/">OSM2Vectortiles</a>
-      +slide('blue')
-        h2 Exemplo de mapa vetorizado
-        iframe(width="720", height="480", src="http://localhost:8090/styles/bright-v9/?vector#12.65/-23.5469/-46.6349", frameborder="0", allowfullscreen)
       +slide('blue')
         h2 Ferramentas de Edição - <a href="https://josm.openstreetmap.de">JOSM</a>
         img(src="images/josm.jpg", width="600px")
@@ -97,8 +61,8 @@ html
         h2 Ferramentas de Edição - <a href="http://www.qgis.org/en/site/">QGIS</a>
         img(src="images/qgis.png", width="700px")
       +slide('blue')
-        h2 Ferramentas de Edição - <a href="http://www.openstreetmap.org/">iD</a>
-        iframe(width="720", height="480", src="http://localhost:80/edit", frameborder="0", allowfullscreen)
+        h2 Ferramentas de Edição - <a href="https://www.openstreetmap.org/">iD</a>
+        iframe(width="900", height="480", src="http://strava.github.io/iD/", frameborder="0", allowfullscreen)
       +slide('blue')
         h1 Estudos de caso
         h3 O que dá pra fazer com essas ferramentas?
@@ -156,21 +120,15 @@ html
         p Depois você pode procurar dados
         p e pensar em como viabilizar seu mapa.
       +slide('blue')
-        h3 Lição Bônus
-        h1 OSM Local
-      +slide('blue')
-        h3 Arquitetura do site
-        img(src="images/OSM_Components.png", width="700px")
-      +slide('blue')
         span
-          img.avatar(src='images/profile.jpeg')
+          img.avatar(src='images/icone-abelha.png')
           &nbsp;
           img.avatar(src='images/logo-2.png')
         br
         h2 Obrigado! ;)
-        a(href='http://beeline-app.com/', style='border:none')
-          h3 beeline-app.com | facebook.com/medidasp
         a(href='https://facebook.com/beelineappbr', style='border:none')
-          h3 @beelineappbr
+          h3 facebook.com/beelineappbr
+        a(href='https://facebook.com/medidasp', style='border:none')
+          h3 facebook.com/medidasp
 
     script(src='build/build.js')
